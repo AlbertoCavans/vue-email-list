@@ -11,12 +11,14 @@ const app = createApp({
   methods: {},
 
   mounted() {
-    axios
-      .get("https://flynn.boolean.careers/exercises/api/random/mail")
-      .then((resp) => {
-        const email = resp.data.response;
-        this.emails.push(email);
-      });
+    for (let i = 0; i < 10; i++) {
+      axios
+        .get("https://flynn.boolean.careers/exercises/api/random/mail")
+        .then((resp) => {
+          const email = resp.data.response;
+          this.emails.push(email);
+        });
+    }
   },
 });
 
