@@ -3,7 +3,7 @@ const { createApp } = Vue;
 const app = createApp({
   data() {
     return {
-      message: "Hello Vue!",
+      message: "Ciao! Ecco 10 email random!",
       emails: [],
     };
   },
